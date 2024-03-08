@@ -3,13 +3,11 @@ name: Github Actions Test
 on: [ push, pull_request ]
 
 jobs:
-
   helloci-build:
     name: Test with go ${{ matrix.go_version }} on ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     environment:
       name: helloci
-
       strategy:
         matrix:
           go_version: [ 1.21 ]
