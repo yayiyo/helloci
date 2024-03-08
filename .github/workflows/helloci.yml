@@ -41,7 +41,7 @@ jobs:
       - name: Publish to Registry
         uses: elgohr/Publish-Docker-Github-Action@v5
         with:
-          name: ccr.ccs.tencentyun.com/yaiyo/helloci:beta
+          name: ccr.ccs.tencentyun.com/yayiyo/helloci:beta
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           registry: ccr.ccs.tencentyun.com
